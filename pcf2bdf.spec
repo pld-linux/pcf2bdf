@@ -1,3 +1,4 @@
+# TODO: optflags
 Summary:	PCF to BDF font conwerter
 Summary(pl):	Konwerter fontów PCF do formatu BDF
 Name:		pcf2bdf
@@ -12,7 +13,7 @@ Patch1:		%{name}-DESTDIR.patch
 Patch2:		%{name}-gzip.patch
 # in Japanese :)
 URL:		http://www.tsg.ne.jp/GANA/S/pcf2bdf/
-BuildRequires:	libstdc++
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -39,8 +40,6 @@ cp -f Makefile.gcc Makefile
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
-#install -d $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
