@@ -1,0 +1,13 @@
+--- pcf2bdf-1.04/Makefile.gcc.orig	Fri Sep 24 12:11:11 2004
++++ pcf2bdf-1.04/Makefile.gcc	Fri Sep 24 12:11:11 2004
+@@ -5,8 +5,8 @@
+ CXX		= $(CC)
+ CXXFLAGS	= $(CFLAGS)
+ PREFIX		= /usr/local
+-BINPATH		= $(PREFIX)/bin
+-MANPATH		= $(PREFIX)/man/man1
++BINPATH		= $(DESTDIR)$(PREFIX)/bin
++MANPATH		= $(DESTDIR)$(PREFIX)/share/man/man1
+ 
+ all:		pcf2bdf
+ 

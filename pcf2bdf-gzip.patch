@@ -1,0 +1,15 @@
+Only in pcf2bdf.n: pcf2bdf
+diff -ur pcf2bdf/pcf2bdf.cc pcf2bdf.n/pcf2bdf.cc
+--- pcf2bdf/pcf2bdf.cc	Sun Oct 20 19:08:17 2002
++++ pcf2bdf.n/pcf2bdf.cc	Fri Sep 24 11:28:52 2004
+@@ -594,8 +594,8 @@
+       return error_exit("stdin is gzip'ed or compress'ed\n");
+     fclose(ifp);
+     char buf[1024];
+-    sprintf(buf, "gzip -dc %s", ifilename); // TODO
+-    ifp = popen(buf, "rb");
++    snprintf(buf, 1024, "gzip -dc %s", ifilename); // TODO
++    ifp = popen(buf, "r");
+     _setmode(fileno(ifp), O_BINARY);
+     read_bytes = 0;
+     if (!ifp)

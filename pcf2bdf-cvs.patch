@@ -1,0 +1,35 @@
+diff -u pcf2bdf-1.04/Makefile.gcc pcf2bdf/Makefile.gcc
+--- pcf2bdf-1.04/Makefile.gcc	Sun Oct 20 19:17:00 2002
++++ pcf2bdf/Makefile.gcc	Wed Dec 17 18:23:38 2003
+@@ -1,6 +1,6 @@
+ # Makefile for pcf2bdf (gcc)  -*- makefile -*-
+ 
+-CC		= gcc
++CC		= g++
+ CFLAGS		= -Wall -O2
+ CXX		= $(CC)
+ CXXFLAGS	= $(CFLAGS)
+diff -u pcf2bdf-1.04/README.txt pcf2bdf/README.txt
+--- pcf2bdf-1.04/README.txt	Sun Oct 20 20:09:15 2002
++++ pcf2bdf/README.txt	Wed Dec 17 18:23:39 2003
+@@ -25,7 +25,7 @@
+ 	file as input, but gzip must be found in your PATH.
+ 
+ 	FONTBOUNDINGBOX in a BDF file is not used by bdftopcf , so
+-	pcf2bdf generate irresponsible values.
++	pcf2bdf generates irresponsible values.
+ 
+ OPTIONS
+ 	-v      very verbose output.
+diff -u pcf2bdf-1.04/pcf2bdf.man pcf2bdf/pcf2bdf.man
+--- pcf2bdf-1.04/pcf2bdf.man	Sun Oct 20 19:06:39 2002
++++ pcf2bdf/pcf2bdf.man	Wed Dec 17 18:23:39 2003
+@@ -22,7 +22,7 @@
+ .I bdftopcf
+ , so
+ .I pcf2bdf
+-generate irresponsible values.
++generates irresponsible values.
+ .SH OPTIONS
+ .TP 8
+ .B \-v
