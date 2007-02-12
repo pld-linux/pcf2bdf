@@ -1,6 +1,6 @@
 # TODO: optflags
 Summary:	PCF to BDF font conwerter
-Summary(pl):	Konwerter fontów PCF do formatu BDF
+Summary(pl.UTF-8):   Konwerter fontÃ³w PCF do formatu BDF
 Name:		pcf2bdf
 Version:	1.04
 Release:	1
@@ -22,11 +22,11 @@ Compiled Format (PCF) to Bitmap Distribution Format (BDF).  It can
 also accept a compressed/gzipped PCF file as input, but gzip must be
 found in your PATH.
 
-%description -l pl
-pcf2bdf jest dekompilatorem fontów s³u¿±cym do konwersji z formatu
+%description -l pl.UTF-8
+pcf2bdf jest dekompilatorem fontÃ³w sÅ‚uÅ¼Ä…cym do konwersji z formatu
 PCF (Portable Compiled Format) do BDF (Bitmap Distribution Format).
-Mo¿na mu podawaæ jako dane wej¶ciowe równie¿ plik PCF skompresowany
-gzipem, ale wymaga to dostêpno¶ci programu gzip w PATH.
+MoÅ¼na mu podawaÄ‡ jako dane wejÅ›ciowe rÃ³wnieÅ¼ plik PCF skompresowany
+gzipem, ale wymaga to dostÄ™pnoÅ›ci programu gzip w PATH.
 
 %prep
 %setup -q -c
