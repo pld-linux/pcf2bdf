@@ -1,6 +1,6 @@
 # TODO: optflags
 Summary:	PCF to BDF font conwerter
-Summary(pl.UTF-8):   Konwerter fontów PCF do formatu BDF
+Summary(pl.UTF-8):	Konwerter fontów PCF do formatu BDF
 Name:		pcf2bdf
 Version:	1.04
 Release:	1
